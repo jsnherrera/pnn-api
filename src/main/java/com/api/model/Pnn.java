@@ -13,7 +13,7 @@ public class Pnn {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String id;
+	private Integer id;
 	@Column
 	private String clave_censal;
 	@Column
