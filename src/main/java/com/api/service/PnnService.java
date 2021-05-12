@@ -15,7 +15,7 @@ public class PnnService {
 	@Autowired
 	private IPnnRepo repo;
 
-	/*public PnnResponse findAll() {
+	public PnnResponse findAll() {
 		PnnResponse response = new PnnResponse();
 		try {
 			List<Pnn> list = repo.findAll();
@@ -27,7 +27,7 @@ public class PnnService {
 			response.setMenssage(e.toString());
 		}
 		return response;
-	}*/
+	}
 
 	public PnnResponse findAllSubscribersByNumber(String number) {
 		PnnResponse response = new PnnResponse();
