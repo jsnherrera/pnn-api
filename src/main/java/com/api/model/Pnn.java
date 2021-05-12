@@ -9,6 +9,9 @@ import javax.persistence.Table;
 @Table(name = "pnn")
 public class Pnn {
 
+	@Id
+	@Column
+	private String id;
 	@Column
 	private String clave_censal;
 	@Column
@@ -29,7 +32,6 @@ public class Pnn {
 	private String nir;
 	@Column
 	private String serie;
-	@Id
 	@Column
 	private String numeracion_inicial;
 	@Column
