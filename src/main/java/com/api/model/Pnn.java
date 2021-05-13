@@ -33,8 +33,6 @@ public class Pnn {
 	@Column
 	private String numeracion_final;
 	@Column
-	private String tipo_red;
-	@Column
 	private String razon_social;
 	@Column
 	private String nombre_corto;
@@ -119,14 +117,6 @@ public class Pnn {
 
 	public void setNumeracion_final(String numeracion_final) {
 		this.numeracion_final = numeracion_final;
-	}
-
-	public String getTipo_red() {
-		return tipo_red;
-	}
-
-	public void setTipo_red(String tipo_red) {
-		this.tipo_red = tipo_red;
 	}
 
 	public String getRazon_social() {
