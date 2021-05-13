@@ -35,7 +35,7 @@ public class PnnService {
 
 			response.setPnn(pnnDTO);
 			response.setCode(0);
-			response.setMenssage("Success");
+			response.setMenssage("Success" + pnnDTO == null ? " - Resource not found" : "");
 
 		} catch (Exception e) {
 			response.setCode(-1);

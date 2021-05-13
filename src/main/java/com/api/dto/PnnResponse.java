@@ -2,7 +2,7 @@ package com.api.dto;
 
 public class PnnResponse {
 
-	private int code;
+	private int code = -1;
 	private String menssage;
 	private PnnDTO pnn;
 
