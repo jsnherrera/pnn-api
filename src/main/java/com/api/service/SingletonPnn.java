@@ -35,7 +35,7 @@ public class SingletonPnn {
 
 		System.out.println("Se ejecuta importarPnnCsv");
 
-		File dir = new File(".");
+		File dir = new File("./target/");
 		String[] ficheros = dir.list();
 
 		if (ficheros != null) {
@@ -44,7 +44,7 @@ public class SingletonPnn {
 			}
 		}
 
-		try (Reader in = new FileReader("pnn.csv")) {
+		try (Reader in = new FileReader("./target/classes/pnn.csv")) {
 
 			Iterable<CSVRecord> records = CSVFormat.DEFAULT
 					// .withHeader(HEADERS)
