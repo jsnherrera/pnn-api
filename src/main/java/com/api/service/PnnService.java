@@ -5,13 +5,9 @@ import org.springframework.stereotype.Service;
 
 import com.api.dto.PnnDTO;
 import com.api.dto.PnnResponse;
-import com.api.repository.IPnnRepo;
 
 @Service
 public class PnnService {
-
-	@Autowired
-	private IPnnRepo repo;
 
 	@Autowired
 	private SingletonPnn singletonPnn;
