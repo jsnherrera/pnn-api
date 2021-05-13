@@ -1,5 +1,6 @@
 package com.api.service;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.Reader;
 import java.util.HashMap;
@@ -33,6 +34,15 @@ public class SingletonPnn {
 	public void importarPnnCsv() {
 
 		System.out.println("Se ejecuta importarPnnCsv");
+
+		File dir = new File(".");
+		String[] ficheros = dir.list();
+
+		if (ficheros != null) {
+			for (String str : ficheros) {
+				System.out.println(str);
+			}
+		}
 
 		try (Reader in = new FileReader("pnn.csv")) {
 
