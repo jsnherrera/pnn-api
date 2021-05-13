@@ -34,11 +34,7 @@ public class SingletonPnn {
 
 		System.out.println("Se ejecuta importarPnnCsv");
 
-		ClassPathResource resource = new ClassPathResource("pnn.csv");
-		
-		System.out.println("resource.getPath(): " + resource.getPath());
-
-		try (Reader in = new FileReader(resource.getFile())) {
+		try (Reader in = new FileReader("classes/pnn.csv")) {
 
 			Iterable<CSVRecord> records = CSVFormat.DEFAULT
 					// .withHeader(HEADERS)
