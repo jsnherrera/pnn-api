@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
-import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
@@ -23,8 +22,7 @@ public class SwaggerConfig {
 
 	@SuppressWarnings("unchecked")
 	private ApiInfo apiInfo() {
-		return new ApiInfo("Pnn", "API to manage the different type of operators", "1.0",
-				null, new Contact("Mexico Desarrollo Colmena", "pnn.com.mx", "colmenadesa@colmena.com"), null, null,
+		return new ApiInfo("Pnn", "API to manage movil operators", "1.0", null, null, null, null,
 				Collections.EMPTY_LIST);
 	}
 

@@ -35,14 +35,12 @@ public class SingletonPnn {
 
 		System.out.println("Se ejecuta importarPnnCsv");
 
-		File dir = new File("./target/");
-		String[] ficheros = dir.list();
-
-		if (ficheros != null) {
-			for (String str : ficheros) {
-				System.out.println(str);
-			}
-		}
+		/*
+		 * File dir = new File("./target/"); String[] ficheros = dir.list();
+		 * 
+		 * if (ficheros != null) { for (String str : ficheros) {
+		 * System.out.println(str); } }
+		 */
 
 		try (Reader in = new FileReader("./target/classes/pnn.csv")) {
 
