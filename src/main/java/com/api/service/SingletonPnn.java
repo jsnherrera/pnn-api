@@ -1,6 +1,5 @@
 package com.api.service;
 
-import java.io.File;
 import java.io.FileReader;
 import java.io.Reader;
 import java.util.HashMap;
@@ -8,7 +7,6 @@ import java.util.HashMap;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 import org.springframework.context.annotation.Scope;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
 import com.api.dto.PnnDTO;

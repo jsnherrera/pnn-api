@@ -6,7 +6,6 @@ public class PnnDTO {
 	private String poblacion;
 	private String municipio;
 	private String estado;
-	private String region;
 	private String nir;
 	private String serie;
 	private String numeracion_inicial;
@@ -22,7 +21,6 @@ public class PnnDTO {
 		this.poblacion = poblacion;
 		this.municipio = municipio;
 		this.estado = estado;
-		this.region = region;
 		this.nir = nir;
 		this.serie = serie;
 		this.numeracion_inicial = numeracion_inicial;
@@ -62,14 +60,6 @@ public class PnnDTO {
 
 	public void setEstado(String estado) {
 		this.estado = estado;
-	}
-
-	public String getRegion() {
-		return region;
-	}
-
-	public void setRegion(String region) {
-		this.region = region;
 	}
 
 	public String getNir() {
